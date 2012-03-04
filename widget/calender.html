@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="calender.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <SCRIPT type="text/javascript" src="calender.js">
+		</SCRIPT>
+        <script type="text/javascript">	
+        $(document).ready(function(){
+			var cal = new Calender("cal-container");
+			cal.draw();
+		});
+        </script>
+    </head>
+    <body>
+    	<div id="cal-container">
+		</div>
+    </body>
+</html>

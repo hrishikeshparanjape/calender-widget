@@ -1,0 +1,49 @@
+#calender-days-bar, #calender-top-bar, #calender-control-bar {
+	width: 350px;
+	background-color: #FFCCFF;
+}
+
+#calender-top-bar {
+	height: 50px;
+	background-color: #9999FF;
+}
+
+#calender-control-bar{
+	border-style: solid;
+	border-width: 1px;
+	height: 20px;
+	width: 348px;
+	background-color: #FFFFFF;
+}
+
+.day-label, .calender-day, .weekend-day, .no-day {
+	border-style: solid;
+	border-width: 1px;
+	min-height: 48px;
+	min-width: 48px;
+	background-color: #9999FF;
+	text-align: center;
+	float: left;
+}
+
+.calender-day {
+	background-color: #FFFFCC;
+}
+
+.weekend-day {
+	background-color: #FF4D4D;
+}
+
+.no-day {
+	background-color: #C2FF85;
+}
+
+.buttondiv, #calender-month{
+	float: left;
+	min-width: 49px;
+	text-align: center;
+}
+
+#calender-month{
+	min-width:250px;
+} 

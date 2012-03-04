@@ -1,0 +1,96 @@
+#first{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+#second{
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+#third{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    height: 100px;
+    width: 200px;
+    background-color: yellow;
+}
+
+#hiddentext{
+    visibility: hidden;
+}
+
+#first:hover{
+    border: #000 5px solid;
+    -webkit-box-sizing: border-box;
+}
+
+#first:hover + #second + #third > #hiddentext{
+    visibility:visible;
+}
+
+
+#top
+{
+    position: fixed;
+    width: 400px;
+    height: 400px;
+
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+/* Safari and Chrome: */
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+/* FF: */
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-play-state: running;
+}
+
+
+@keyframes rotate
+{
+    0%   {transform: rotate(0deg);}
+    20%  {transform: rotate(72deg);}
+    40%  {transform: rotate(144deg);}
+    60%  {transform: rotate(216deg);}
+    80%  {transform: rotate(288deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotate /* Chrome and Safari */
+{
+    0%   {-webkit-transform: rotate(0deg); /* Safari and Chrome */}
+    20%  {-webkit-transform: rotate(72deg); /* Safari and Chrome */}
+    40%  {-webkit-transform: rotate(144deg); /* Safari and Chrome */}
+    60%  {-webkit-transform: rotate(216deg); /* Safari and Chrome */}
+    80%  {-webkit-transform: rotate(288deg); /* Safari and Chrome */}
+    100% {-webkit-transform: rotate(360deg); /* Safari and Chrome */}
+}
+
+@-moz-keyframes rotate /* FF */
+{
+    0%   {-moz-transform: rotate(0deg); /* FF */}
+    20%  {-moz-transform: rotate(72deg);/* FF */}
+    40%  {-moz-transform: rotate(144deg); /* FF */}
+    60%  {-moz-transform: rotate(216deg); /* FF */}
+    80%  {-moz-transform: rotate(288deg); /* FF */}
+    100% {-moz-transform: rotate(360deg); /* FF */}
+}​
